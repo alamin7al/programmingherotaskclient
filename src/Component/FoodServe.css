@@ -1,0 +1,13 @@
+.search_student_roll {
+    padding-left: 0;
+}
+.search_student_roll li {
+    list-style: none;
+    padding: 0 10px;
+}
+
+.search_student_roll li:hover {
+    cursor: pointer;
+    color: #fff;
+    background-color: rgb(88, 166, 255);
+}

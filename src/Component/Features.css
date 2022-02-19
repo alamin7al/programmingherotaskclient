@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+  
+  
+  
+  .cardss {
+    height: 270px;
+    min-width: 550px;
+    width: 670px;
+    background: linear-gradient(45deg, #0c0200, #2f3131);
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    position: relative;
+    border-radius: 20px;
+    padding: 20px;
+    color: aliceblue;
+  }
+  
+  .cardss img {
+    height: 170px;
+    max-width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 100%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+  }
+  
+  .cardss h2 {
+    /* margin-top: 20px; */
+    color: #e5aa1d;
+    transition: 0.2s;
+  }
+  
+  .cardss p,
+  em {
+    font-family: Sans-serif;
+    transition: 0.2s;
+    opacity: 0;
+  }
+  
+  .cardss p {
+    width: 200px;
+    margin-bottom: 25px;
+  }
+  
+  .cardss em {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #0c0200;
+    background-color: #e5aa1d;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .cardss em:hover {
+    /* color: #fff; */
+    background-color: #0c0200;
+  }
+  
+  .cardss:hover img {
+    right: 50%;
+    top: 50%;
+    height: 200px;
+  }
+  
+  .cardss:hover h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+  }
+  
+  .cardss:hover p,
+  .cardss:hover em {
+    opacity: 1;
+  }
+  
+
+
+.dfdff {
+    letter-spacing: 2px;
+    font-size: 46px;
+    margin: 0;
+    font-weight: bold;
+    /* font-family: futura_lt_bold; */
+}
+
+.wpb_wrapper{
+    margin-top: 5px !important;
+    margin-bottom: 0px !important;
+    padding-right: 26% !important;
+    padding-left: 26% !important;
+}
+
+
+

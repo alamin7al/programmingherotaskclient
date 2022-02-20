@@ -9,14 +9,14 @@ const Details = () => {
     const { id } = useParams()
     const [single, setSingle] = useState({})
     useEffect(() => {
-        fetch(`http://localhost:5000/single/${id}`)
+        fetch(`https://tranquil-spire-06424.herokuapp.com/single/${id}`)
             .then(res => res.json())
             .then(data => setSingle(data))
     })
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/details', {
+        fetch('https://tranquil-spire-06424.herokuapp.com/details', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

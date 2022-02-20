@@ -10,7 +10,7 @@ const Edit = () => {
 
 
     useEffect(() => {
-        const url = `http://localhost:5000/watch/${id}`
+        const url = `https://tranquil-spire-06424.herokuapp.com/watch/${id}`
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -19,7 +19,7 @@ const Edit = () => {
     }, [id])
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/watch/${id}`
+        const url = `https://tranquil-spire-06424.herokuapp.com/watch/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {

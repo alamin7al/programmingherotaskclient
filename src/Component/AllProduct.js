@@ -8,7 +8,7 @@ const AllProduct = () => {
     const [page, setPage] = useState(0);
     const [pageSize, setPageSize] = useState(0)
     useEffect(() => {
-        fetch(`http://localhost:5000/watch?page=${page}&&size=5`)
+        fetch(`https://tranquil-spire-06424.herokuapp.com/watch?page=${page}&&size=5`)
             .then(res => res.json())
             .then(data => {
                 setAllwatch(data.payload)

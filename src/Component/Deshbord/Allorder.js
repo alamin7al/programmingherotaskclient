@@ -5,7 +5,7 @@ import Order from './Order';
 const Allorder = () => {
     const [allorder, setAllorder] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/details')
+        fetch('https://tranquil-spire-06424.herokuapp.com/details')
             .then(res => res.json())
             .then(data => setAllorder(data))
     })

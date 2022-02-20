@@ -11,7 +11,7 @@ const WatchHome = () => {
 
 
     useEffect(() => {
-        fetch('http://localhost:5000/watch')
+        fetch('https://tranquil-spire-06424.herokuapp.com/watch')
             .then(res => res.json())
             .then(data => setWatches(data.payload))
     })

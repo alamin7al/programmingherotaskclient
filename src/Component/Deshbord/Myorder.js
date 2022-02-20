@@ -7,7 +7,7 @@ const Myorder = () => {
     const { user } = useAuth()
     const [users, setUsers] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/singleemail?email=${user?.email}`)
+        fetch(`https://tranquil-spire-06424.herokuapp.com/singleemail?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setUsers(data))
     }, [user?.email])

@@ -8,7 +8,7 @@ const Order = ({ order, allorder, setAllorder }) => {
     const handleDeleted = (id) => {
         const procces = window.confirm('Are You Sure, You Want To Delet')
         if (procces) {
-            fetch(`http://localhost:5000/details/${id}`, {
+            fetch(`https://tranquil-spire-06424.herokuapp.com/details/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json'

@@ -5,7 +5,7 @@ import '../../Component/Deshbord/Deshbord.css'
 const ProductAdd = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/watch', {
+        fetch('https://tranquil-spire-06424.herokuapp.com/watch', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -5,7 +5,7 @@ import img2 from '../img/download.png'
 const RevewSlot = () => {
     const [revew, setRevew] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/revew')
+        fetch('https://tranquil-spire-06424.herokuapp.com/revew')
             .then(res => res.json())
             .then(data => setRevew(data))
     })

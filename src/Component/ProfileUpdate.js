@@ -9,14 +9,14 @@ const ProfileUpdate = () => {
     const { register, handleSubmit, formState: { errors } } = useForm();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/profile/${id}`)
+        fetch(`https://tranquil-spire-06424.herokuapp.com/profile/${id}`)
             .then(res => res.json())
             .then(data => setSingle(data))
     }, [single,id])
 
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/profile/${id}`
+        const url = `https://tranquil-spire-06424.herokuapp.com/profile/${id}`
         fetch(url, {
             method: 'PUT',
             headers: {

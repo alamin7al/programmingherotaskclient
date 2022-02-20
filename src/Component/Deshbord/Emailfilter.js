@@ -7,7 +7,7 @@ const strongailfilter = ({ e,users,setUsers }) => {
     const handleDeleted = (id) => {
         const procces = window.confirm('Are You Sure, You Want To Delet')
         if (procces) {
-            fetch(`http://localhost:5000/singlestrongail/${id}`, {
+            fetch(`https://tranquil-spire-06424.herokuapp.com/singlestrongail/${id}`, {
                 method: 'DELETE',
                 headers: {
                     'content-type': 'application/json'

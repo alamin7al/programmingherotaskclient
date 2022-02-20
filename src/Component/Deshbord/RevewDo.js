@@ -5,7 +5,7 @@ import '../Deshbord/Deshbord.css'
 const RevewDo = () => {
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/revew', {
+        fetch('https://tranquil-spire-06424.herokuapp.com/revew', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

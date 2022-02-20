@@ -11,7 +11,7 @@ const Profile = () => {
 
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch('http://localhost:5000/profile', {
+        fetch('https://tranquil-spire-06424.herokuapp.com/profile', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -31,7 +31,7 @@ const Profile = () => {
             })
     }
     useEffect(() => {
-        const url = `http://localhost:5000/profile?email=${user?.email}`
+        const url = `https://tranquil-spire-06424.herokuapp.com/profile?email=${user?.email}`
 
         fetch(url)
             .then(res => res.json())
